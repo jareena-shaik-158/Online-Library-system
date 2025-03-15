@@ -1,0 +1,93 @@
+/* Browse Books Container */
+.browse-books-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+}
+
+/* Title */
+.browse-books-title {
+    font-size: 34px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    border: 2px solid #ff758c;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.search-bar:focus {
+    border-color: #ff3d68;
+    box-shadow: 0px 4px 10px rgba(255, 61, 104, 0.4);
+}
+
+/* Books List */
+.books-list {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Book Card */
+.book-card {
+    width: 250px;
+    padding: 20px;
+    background: linear-gradient(to right, #76c1ff, #63a4ff);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(to right, #63a4ff, #3c8dff);
+}
+
+/* Book Details Link */
+.book-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: yellow;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.book-link:hover {
+    text-decoration: underline;
+}
+
+/* No Books Found Message */
+.no-books {
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .books-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-card {
+        width: 90%;
+    }
+}

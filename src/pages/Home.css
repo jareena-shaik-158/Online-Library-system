@@ -1,0 +1,128 @@
+/* General Styles */
+.home-container {
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+}
+
+/* Heading Styles */
+.home-title {
+    font-size: 38px;
+    font-weight: bold;
+    color: #1e1e1e;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-title img {
+    width: 35px;
+}
+
+/* Book Categories Section */
+.categories-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(to right, #ff7eb3, #ff758c);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.categories-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+.categories-list li {
+    list-style: none;
+}
+
+.categories-list a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.categories-list a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px);
+}
+
+/* Popular Books Section */
+.popular-books-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(to right, #76c1ff, #63a4ff);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.popular-books-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.popular-books-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.popular-books-list li {
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.popular-books-list li:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+.popular-books-list a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.popular-books-list a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .categories-list,
+    .popular-books-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
